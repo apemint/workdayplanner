@@ -11,8 +11,9 @@ This application displays a standard 9-5 workday in hourly timeblocks. The appli
 
 ## URL
 github repo:
-
+https://github.com/apemint/workdayplanner
 Deployed app via github pages:
+https://apemint.github.io/workdayplanner/
 
 
 ## Improvement for future
