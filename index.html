@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<!---------------------------Head----------------------------->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+</head>
+<!------------------------End Head------------------------------------------>
+
+<!--------------------------Body---------------------------------------------->
+
+<body>
+
+    <!-----------Header-------------->
+    <header class="jumbotron">
+        <h1 class="display-3">Work Day Scheduler</h1>
+        <p class="lead" id="todays-date" >A simple calendar app for scheduling your work day</p>
+        <p id="currentDay" class="lead"></p>
+    </header>
+
+
+    <!-------------Divs--------------------->
+    <div class="container">
+        <!-- Timeblocks go here -->
+        <div class="table-responsive">
+            <!----------Table------------------------>
+            <table class="table">
+                <tbody id="schedule-table">
+                    <!-----------9------------------>
+                    <tr id="09">
+                        <th scope="row" class="align-middle time">09:00</th>
+                        <td class="input-cell">
+                            <textarea class="input-area" id="area-9"></textarea>
+                        </td>
+                        <td id="save-0900" class="align-middle save-button-cell">
+                            <div class="text-center">
+                                <button class="btn btn-outline-secondary save-button" id="button9" type="button">
+                                    <i class="far fa-save"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-----------------10--------------->
+                    <tr id="10">
+                        <th scope="row" class="align-middle time">10:00</th>
+                        <td class="input-cell">
+                            <textarea class="input-area" id="area-10"></textarea>
+                        </td>
+                        <td id="save-1000" class="align-middle save-button-cell">
+                            <div class="text-center">
+                                <button class="btn btn-outline-secondary save-button" id="button10" type="button">
+                                    <i class="far fa-save"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <!---------------11------------------->
+                    <tr id="11">
+                        <th scope="row" class="align-middle time">11:00</th>
+                        <td class="input-cell">
+                            <textarea class="input-area" id="area-11"></textarea>
+                        </td>
+                        <td id="save-1100" class="align-middle save-button-cell">
+                            <div class="text-center">
+                                <button class="btn btn-outline-secondary save-button" id="button11" type="button">
+                                    <i class="far fa-save"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <!---------------12--------------------->
+                    <tr id="12">
+                        <th scope="row" class="align-middle time">12:00</th>
+                        <td class="input-cell">
+                            <textarea class="input-area" id="area-12"></textarea>
+                        </td>
+                        <td id="save-1200" class="align-middle save-button-cell">
+                            <div class="text-center">
+                                <button class="btn btn-outline-secondary save-button" id="button12" type="button">
+                                    <i class="far fa-save"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-----------------13----------------------->
+                    <tr id="13">
+                        <th scope="row" class="align-middle time">13:00</th>
+                        <td class="input-cell">
+                            <textarea class="input-area" id="area-13"></textarea>
+                        </td>
+                        <td id="save-1300" class="align-middle save-button-cell">
+                            <div class="text-center">
+                                <button class="btn btn-outline-secondary save-button" id="button13" type="button">
+                                    <i class="far fa-save"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <!--------------------14--------------------->
+                    <tr id="14">
+                        <th scope="row" class="align-middle time">14:00</th>
+                        <td class="input-cell">
+                            <textarea class="input-area" id="area-14"></textarea>
+                        </td>
+                        <td id="save-1400" class="align-middle save-button-cell">
+                            <div class="text-center">
+                                <button class="btn btn-outline-secondary save-button" id="button14" type="button">
+                                    <i class="far fa-save"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <!--------------------15-------------------->
+                    <tr id="15">
+                        <th scope="row" class="align-middle time">15:00</th>
+                        <td class="input-cell">
+                            <textarea class="input-area" id="area-15">green</textarea>
+                        </td>
+                        <td id="save-1500" class="align-middle save-button-cell">
+                            <div class="text-center">
+                                <button class="btn btn-outline-secondary save-button" id="button15" type="button">
+                                    <i class="far fa-save"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <!------------------16---------------------->
+                    <tr id="16">
+                        <th scope="row" class="align-middle time">16:00</th>
+                        <td class="input-cell">
+                            <textarea class="input-area" id="area-16"></textarea>
+                        </td>
+                        <td id="save-1600" class="align-middle save-button-cell">
+                            <div class="text-center">
+                                <button class="btn btn-outline-secondary save-button" id="button16" type="button">
+                                    <i class="far fa-save"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-------------------17---------------------->
+                    <tr id="17">
+                        <th scope="row" class="align-middle time">17:00</th>
+                        <td class="input-cell">
+                            <textarea class="input-area" id="area-17"></textarea>
+                        </td>
+                        <td id="save-1700" class="align-middle save-button-cell">
+                            <div class="text-center">
+                                <button class="btn btn-outline-secondary save-button" id="button17" type="button">
+                                    <i class="far fa-save"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!----------End of Table------------------>
+            
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+<!---------------------------End Body----------------------------------------->
+
+</html>
